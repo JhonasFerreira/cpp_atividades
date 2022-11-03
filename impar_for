@@ -1,0 +1,32 @@
+#include<iostream>
+using namespace std;
+int main(){
+	//leia 5 numeros e imprima quantos sao impares
+	int n1=0;
+	int impar=0;
+	int par=0;
+	int n=0;
+  //utilizando While
+  	cout<<"informe 5 numeros: ";
+	while(n<5){
+		n++;
+		cin>>n1;
+		if(n1%2==0){
+			++par;
+		}else{
+			++impar;			
+		}
+		}
+		cout<<impar<<" sao impares."<<endl;
+	    cout<<par<<" numeros pares."<<endl;	
+	//utilizando for
+	cout<<insira 5 numeros";
+	for(n;n<5;n++){
+	  cin>>n1;
+	  if(n1%2==1)
+	  ++par;
+	  else
+	  ++impar;
+	}
+	 cout<<++par<<" pares";
+}
