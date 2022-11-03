@@ -1,0 +1,28 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main(){
+	//calculadora de imc,multiplique altura ao quadrado
+	float peso{},altura{};
+	cout<<"informe seu peso:";
+	cin>>peso;
+	cout<<"informe sua altura:";
+	cin>>altura;
+	//ou imc=peso/(altura*altura);
+	float imc=peso/sqrt(altura);
+	
+   if(imc<=18.5){
+   	cout<<"Abaixo do peso";
+   }else if(imc>=18.5 && imc<=24.9){
+   	cout<<"Peso Normal";
+   }else if(imc>=25 &&imc <=29.9){
+   	cout<<"Sobrepeso";
+   }else if(imc>=30 && imc<=34.9){
+   	cout<<"Obesidade Grau 1";
+   }else if(imc>=35 && imc<=39.9){
+   	cout<<"obedidade gau 2";
+   }else if(imc > 40){
+   	cout<<"Obesidade Grau 3 ou Morbida";
+   }
+   
+}
