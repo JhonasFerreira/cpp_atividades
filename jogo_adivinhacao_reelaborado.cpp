@@ -17,7 +17,7 @@ int main(){
 	
 	//iniciando um loop while para reiniciar a contagem de tentativas.
        while(!fim_tentativas){
-    //todas variaveis inicializadas nesse bloco while serão reinicializadas,apartir do input de continuidade do usuario.
+    //todas variaveis inicializadas nesse bloco while serÃ£o reinicializadas,apartir do input de continuidade do usuario.
 	int tentativas=0;//reinicializando a quantidade de iniciativas.
 	srand(time(NULL));//seed para funcao Srand.
 	int num_secreto=rand() % 10+1;//variavel com a funcao Rand para definir um numero aleatorio entre 1 e 10,apartir de uma seed(srand).
@@ -41,7 +41,7 @@ int main(){
        		system("cls");
            	break;//sai do bloco
 		    }else{
-		    	fim_tentativas=true;//caso o usuario dê um input diferente de 's',encerra o programa.
+		    	fim_tentativas=true;//caso o usuario dÃª um input diferente de 's',encerra o programa.
 			}
            }
 	  	}while (adivinhe != num_secreto&&!fim_tentativas);
